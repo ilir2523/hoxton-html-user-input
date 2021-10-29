@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact-form</title>
+
+</head>
+<body>
+    <div class="blue">
+    <form>
+        <h1>Hey There!</h1>
+
+        <label class="name" for="name">
+            <h3 class="question">What's your name?</h3>
+            
+        </label>
+        <input type="text" placeholder="Enter your name" name="name" id="name" minlength="1" maxlength="20" required>
+        <hr>
+
+        <label class="email" for="email">
+            <h3>What's your email adress?</h3>
+        </label>
+        <input type="email" placeholder="Enteremail adress" name="email" id="email" minlength="1" maxlength="18" required>
+        <hr>
+
+        <label class="service" for="service">
+            <h3>What service are your looking for?</h3>
+        </label>
+        <select name="service" id="service" required >
+            <option value="choose-Service">Choose a service</option>
+            <option value="Service-1">Service-1</option>
+            <option value="Service-2"> Service-2</option>
+            <option value="Service-3">Service-3</option>
+        </select>
+        <hr>
+
+        <label class="budget" for="budget">
+            <h3>What is your buget?</h3>
+        </label>
+        <select name= "budget" id="budget">
+            <option value="">Select budget</option>
+            <option value="100$">100$</option>
+            <option value="500$">500$</option>
+            <option value="1000$">1000$</option>
+            <option value="more">More</option>
+        </select>
+
+        <hr>
+
+        <label name="anth" for="message">
+           <h3>Anything else you'd like tell us?</h3> 
+        </label>
+            <textarea name="message" placeholder="Your meassage here..." id="message"></textarea>
+        <hr>
+        <label name="tc" class="ts">
+            <h3>I agree with the Tearms & Conditions.</h3>
+            <input name="checkbox" type="checkbox" required>
+        </label>
+
+        <button type="submit" name="submit" value="Submit" aria-required="true">Submit →</button>
+    </form>
+</div>
+</body>
+</html>
